@@ -1,0 +1,29 @@
+<html>
+  <style type="text/css" media="screen">
+      canvas {
+          width: 800px; 
+          height: 600px;
+      }
+  </style>
+  <head>
+    <title>Scorched Earth</title>
+    <script src="js-dos.js"></script>
+  </head>
+  <body background="bg.jpg" text="white">
+    <canvas id="jsdos" width="800" height="600" ></canvas>
+    <script>
+      Dos(document.getElementById("jsdos"), {
+      }).ready((fs, main) => {
+        fs.extract("game.zip").then(() => {
+          main(["-c",  GAME_ARGS])
+        });
+      });
+    </script>
+    <br><br><br><br><br>
+    <center>
+      <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+      </form>
+    </center>
+  </body>
+</html>
