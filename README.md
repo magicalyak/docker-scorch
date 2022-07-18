@@ -221,3 +221,228 @@ docker build \
   --build-arg GAME_ARGS=$GAME_ARGS \
   -t magicalyak/docker-games:$GAME_TAG .
 ```
+
+## Examples with Downloads
+
+DROP ZIP into the ZIP directory for these
+
+```bash
+# https://www.dosgames.com/game/super-street-fighter-ii-turbo/
+GAME_TAG=streetfighter2
+GAME_URL=ZIP/DOSBOX_SSF2T.ZIP
+GAME_ARGS=\"SSF2T.BAT\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/wolfenstein-3d/
+GAME_TAG=wolfenstein3d
+GAME_URL=ZIP/DOSBOX_WOLF3D.ZIP
+GAME_ARGS=\"WOLF3D.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/quake/
+GAME_TAG=quake
+GAME_URL=ZIP/DOSBOX_QUAKE.ZIP
+GAME_ARGS=\"QUAKE.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/tomb-raider/
+GAME_TAG=tombraider
+GAME_URL=ZIP/DOSBOX_TOMB.ZIP
+GAME_ARGS=\"TOMB.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/champ-kong/
+GAME_TAG=donkeykong
+GAME_URL=ZIP/ckong11.zip
+GAME_ARGS=\"CKONG.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/duke-nukem-3d/
+GAME_TAG=dukenukem
+GAME_URL=ZIP/DOSBOX_DUKE3D.ZIP
+GAME_ARGS=\"DUKE3D.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/ms-pacman-pc/
+GAME_TAG=mspacman
+GAME_URL=ZIP/msppcv12.zip
+GAME_ARGS=\"MSPAC.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/4d-boxing/
+GAME_TAG=4dboxing
+GAME_URL=ZIP/4dboxing.zip
+GAME_ARGS=\"BOX.BAT\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/drug-wars-a-game-based-on-the-new-york-drug-market/
+GAME_TAG=drugwars
+GAME_URL=ZIP/drugwars.zip
+GAME_ARGS=\"DRUGWAR.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/mario-and-luigi/
+GAME_TAG=marioluigi
+GAME_URL=ZIP/MARIO.ZIP
+GAME_ARGS=\"MARIO.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/lion-king-the/
+GAME_TAG=lionking
+GAME_URL=ZIP/lionking.zip
+GAME_ARGS=\"LIONKING.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/battleship/
+GAME_TAG=battleship
+GAME_URL=ZIP/battsv22.zip
+GAME_ARGS=\"BATTLESH.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/nhl-96/
+GAME_TAG=nhl96
+GAME_URL=ZIP/DOSBOX_NHL96.ZIP
+GAME_ARGS=\"NHLDEMO.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/freddy-pharkas-frontier-pharmacist/
+GAME_TAG=freddypharkas
+GAME_URL=ZIP/DOSBOX_FREDDYPHARKAS.ZIP
+GAME_ARGS=\"SIERRA.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/monopoly/
+GAME_TAG=monopoly
+GAME_URL=ZIP/monopoly.zip
+GAME_ARGS=\"MONOPOLY.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/rebel-decade-chess/
+GAME_TAG=rebelchess
+GAME_URL=ZIP/rebdec30.zip
+GAME_ARGS=\"REBEL.EXE\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
+
+```bash
+# https://www.dosgames.com/game/elder-scrolls-arena/
+GAME_TAG=elderscrolls
+GAME_URL=ZIP/DOSBOX_ARENA.ZIP
+GAME_ARGS=\"ARENA.BAT\"
+docker build \
+  --no-cache \
+  --build-arg GAME_URL=$GAME_URL \
+  --build-arg GAME_ARGS=$GAME_ARGS \
+  -f Dockerfile.local \
+  -t magicalyak/docker-games:$GAME_TAG .
+```
